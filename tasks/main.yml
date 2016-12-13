@@ -1,0 +1,8 @@
+---
+- name: add system-wide profile script setting prompt
+  template:
+    dest: /etc/profile.d/prompt.sh
+    src: prompt.sh.j2
+    owner: root
+    group: root
+    mode: 0644
